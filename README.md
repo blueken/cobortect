@@ -1,2 +1,0 @@
-# cobortect
-Created with CodeSandbox
