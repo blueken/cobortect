@@ -3,11 +3,39 @@
   <head>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
+    <script src="./src/index.js"></script>
   </head>
 
   <body>
     <div id="app"></div>
-    <canvas id="canvas" width="400" height="300"></canvas>
-    <script src="./src/index.js"></script>
+    <canvas id="canvas" width="400" height="200"></canvas>
+    <p>
+      目标色：<input
+        type="text"
+        placeholder="#FF0000"
+        value="#FF0000"
+        id="colorSource"
+      />
+    </p>
+
+    <p>
+      边的颜色：<input
+        type="text"
+        value="#00FF00"
+        placeholder="#00FF00"
+        id="colorBorder"
+      />
+    </p>
+    <p>
+      目标接壤色（可选）：<input
+        type="text"
+        placeholder="#FFFF00"
+        value="#FFFF00"
+        id="colorNeighbor"
+      />
+    </p>
+    <p>
+      <button id="btn">描边GO</button>
+    </p>
   </body>
 </html>
